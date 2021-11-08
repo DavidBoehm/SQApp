@@ -3,6 +3,8 @@
 ## TO DO
 JS Reset Button
 Add form fields for info. 
+NoTabIndex
+Timer
 
 ### Implemented 
 Bootstrap (through CDN, Content Delivery Network)

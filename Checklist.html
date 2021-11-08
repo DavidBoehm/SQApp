@@ -9,40 +9,58 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
 </head>
-<h1 id="title">Required Touchpoints for All Sales Calls</h1> <br>
-<h3>884-665-1140</h3>
+<!-- Sticky Header   -->
+
 <body>
   <main>
-    <!-- CLIENT INFORMATION -->
-  <div id="client">
-    <form name="client" class="input-group mb-1">
-      <i class="bi bi-clipboard"></i>
-      <span class="input-group-text">First</span>
-      <input type="text" class="form-control" id="clientFirstName" name="firstName" aria-describedby="First Name">
-      <button onclick="copyThisForm(firstName)" class="btn btn-outline-secondary bi bi-clipboard" type="button" id="button-addon1" ></button>
-
-      <span class="input-group-text">Last</span>
-      <input type="text" class="form-control" id="clientLastName" name="lastName" aria-describedby="Last Name">
-      <button onclick="copyThisForm(lastName)" class="btn btn-outline-secondary bi bi-clipboard" type="button" id="button-addon2" ></button>
-      <span class="input-group-text">ZipCode</span>
-
-      <input type="text" class="form-control" id="zipCode" name="zipCode" aria-describedby="zipCode">
-      <button onclick="copyThisForm(zipCode)" class="btn btn-outline-secondary bi bi-clipboard" type="button" id="button-addon3" ></button>
-
-    </form>
-    <form name="client" class="input-group mb-1">
-      <span class="input-group-text">DOB</span>
-
-      <input type="text" class="form-control" id="dob" name="dob" aria-describedby="dob">
-      <button onclick="copyThisForm(dob)" class="btn btn-outline-secondary bi bi-clipboard" type="button" id="button-addon3" ></button>
-      <span class="input-group-text">MBI</span>
-
-      <input type="text" class="form-control" id="mbi" name="mbi" aria-describedby="mbi">
-      <button onclick="copyThisForm(mbi)" class="btn btn-outline-secondary bi bi-clipboard" type="button" id="button-addon3" ></button>
-
-    </form>
+  <!-- NAVBAR -->
+  <div class="navbar sticky-top bg-info">
+      <div class="row align-items-start m-2">
+        <div class="col-sm text-center">
+            <h1 id="title">Call Guide 
+            <div class="col-sm text-center">
+            <span class="badge rounded-pill bg-primary align-middle">
+              <div id="countUp" class="m-1 text-center">
+                <label id="minutes">00</label><label id="colon">:</label><label id="seconds">00</label></div>
+            </span>        
+          </div>
+        </div>
+      </div>
+        <div class="col-sm text-center">
+          <h3>884-665-1140</h3>
+        </div>
+      <!-- CLIENT INFORMATION -->
+      <div id="client">
+        <div class="col-sm align-content-center">
+        <!-- Use Floating Labels here?0 -->
+        <form name="client" class="input-group mb-1">
+          <span class="input-group-text">First</span>
+          <input type="text" class="form-control m-1" id="clientFirstName" name="firstName" aria-describedby="First Name">
+          <button onclick="copyThisForm(firstName)" class="btn btn-outline-secondary bi bi-clipboard" type="button" id="button-addon1" ></button>
+          <span class="input-group-text">Last</span>
+          <input type="text" class="form-control m-1" id="clientLastName" name="lastName" aria-describedby="Last Name">
+          <button onclick="copyThisForm(lastName)" class="btn btn-outline-secondary bi bi-clipboard" type="button" id="button-addon2" ></button>
+          <span class="input-group-text">ZipCode</span>
+          <input type="text" class="form-contro m-1" id="zipCode" name="zipCode" aria-describedby="zipCode">
+          <button onclick="copyThisForm(zipCode)" class="btn btn-outline-secondary bi bi-clipboard" type="button" id="button-addon3" ></button>
+        </form>
+        <form name="client" class="input-group mb-1">
+          <span class="input-group-text">DOB</span>
+    
+          <input type="text" class="form-control m-1" id="dob" name="dob" aria-describedby="dob">
+          <button onclick="copyThisForm(dob)" class="btn btn-outline-secondary bi bi-clipboard" type="button" id="button-addon3" ></button>
+          <span class="input-group-text">MBI</span>
+    
+          <input type="text" class="form-control m-1" id="mbi" name="mbi" aria-describedby="mbi">
+          <button onclick="copyThisForm(mbi)" class="btn btn-outline-secondary bi bi-clipboard" type="button" id="button-addon3" ></button>
+        </div>
+        </form>
+      </div>
+    </div>
   </div>
+
   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample"></div>
   <!-- DISCLOSURE ACCORDION -->
   <div class="accordion-item">
@@ -55,8 +73,8 @@
       <div class="accordion-body">
         <h3>Must be said <strong>verbatim</strong></h3>
         <form id="centertest">
-          <input id="1" type="checkbox" name="sales-list"> "...on a recorded line." </input> <br>
-          <input type="checkbox" name="sales-list"> "Licensed <b>SALES</b> Agent in [<em>insert client state</em>]." </input> <br>
+          <input id="1" type="checkbox" name="sales-list"> "...on a recorded line." </input><span class="badge rounded-pill bg-danger">1 Min</span> <br>
+          <input type="checkbox" name="sales-list"> "Licensed <b>SALES</b> Agent in [<em>insert client state</em>]." </input><span class="badge rounded-pill bg-danger">10 Min</span> <br>
           <input type="checkbox" name="sales-list"> "Do I have permission to discuss Medicare Advantage plans and Prescription Drug Plans with you?"</input> <br> 
           <input type="checkbox" name="sales-list"> "You are not required to provide me with any information. There is no obligation to enroll, current or</input> <br> future Medicare enrollment status will not be impacted, and automatic enrollment will not occur."
       </div>
@@ -76,12 +94,13 @@
             
             <input type="checkbox" name="sales-list"> "Have you provided me with the names of all of your current prescriptions, including dosages and frequency?"</input> <br>
             <input type="checkbox" name="sales-list"> "The pharmacy [<em>name of pharmacy</em>] located on [<em>pharmacy address</em>] will be selected as your pharmacy of choice, correct?"</input> <br>
-            <input type="checkbox" name="sales-list"> "Have you provided me with the names of your primary care physician/doctor and any specialists you currently see?"</input>
+            <input type="checkbox" name="sales-list"> "Have you provided me with the names of your primary care physician and any specialists you currently see?"</input>
                     
       </div>
     </div>
   </div>
   <!-- BENEFITS ACCORDION -->
+  <!-- Pill Badges Here -->
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
@@ -92,11 +111,11 @@
       <div class="accordion-body">
         <form id="centertest">
             <input type="checkbox" name="sales-list"> Total Plan Premium: $ ____ in addition to your Part B premium.</input> <br>
-            <input type="checkbox" name="sales-list"> Medical Deductible: $ ____ <b>(In & Out of Network if applicable).</b></input> <br>
-            <input type="checkbox" name="sales-list"> Drug Deductible: $ ____ <b>(In & Out of Network if applicable).</b></input> <br>
-            <input type="checkbox" name="sales-list"> Inpatient Hospital: copay $ ____ <b>(In & Out of Network if applicable).</b></input> <br>
-            <input type="checkbox" name="sales-list"> Physician (Doctor Visit): copay $ ____ <b>(In & Out of Network if applicable).</b></input>
-            <input type="checkbox" name="sales-list"> Specialist: copay $ ____ <b>(In & Out of Network if applicable)</b> <em>*Located under Doctor Visit*</em></input> <br>
+            <input type="checkbox" name="sales-list"> Medical Deductible: $ ____ <span class="badge rounded-pill bg-info text-dark">in+out</span></input> <br>
+            <input type="checkbox" name="sales-list"> Drug Deductible: $ ____ <span class="badge rounded-pill bg-info text-dark">in+out</span></input> <br>
+            <input type="checkbox" name="sales-list"> Inpatient Hospital: copay $ ____ <span class="badge rounded-pill bg-info text-dark">in+out</span></input> <br>
+            <input type="checkbox" name="sales-list"> Physician (Doctor Visit): copay $ ____ <span class="badge rounded-pill bg-info text-dark">in+out</span></input><br>
+            <input type="checkbox" name="sales-list"> Specialist: copay $ ____ <span class="badge rounded-pill bg-info text-dark">in+out</span> <em>*Located under Doctor Visit*</em></input> <br>
             <input type="checkbox" name="sales-list"> Emergency Care: copay $____ .</input> <br>
             <input type="checkbox" name="sales-list"> Urgent Care and Urgently Needed Care: copay $ ____ .</input>
             <input type="checkbox" name="sales-list"> Medicaid Number and verification (if applicable).</input> <br>
@@ -145,113 +164,58 @@
     <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <h2 class="border" style="color: white">  </h2> 
-        <ul> 
           <input class="sublist" type="checkbox" name="sales-list"> <u>TCPA</u> (<em>if applicable</em>): "Whenever I collect a phone number, I have to play a recording for compliance purposes; at the end please say yes or no." </input><br>
           <input class="sublist" type="checkbox" name="sales-list"><b> <u>For MAPD Plans:</u></b> "This is a Medicare Advantage Plan, not a Medicare Supplement plan. With this Medicare Advantage plan you will receive your Medicare health benefits through [<em>insert Carrier name</em>] instead of Original Medicare. The name of your plan is the [<em>insert <b>COMPLETE</b> plan name</em>], and it is an [<em>insert <b>HMO, PPO, PFFS, HMO-POS - SNP, DE, </b>ect.</em>]."</input><br>
           <input class="sublist" type="checkbox" name="sales-list"> <u>Only when selling Kaiser plans (suggested verbiage):</u> <br> "Congratulations on your selection of this fabulous Kaiser plan.  With Kaiser you will be able to use their outstanding, Top-Rated network of Primary Care Physicians, specialists and pharmacies. <b>After your enrollment,  you will select your new Primary Care Physician with Kaiser Permanente. As a reminder, all doctors and pharmacies outside of the Kaiser network will not be covered by this plan."</b></input><br>
-        </ul>
-        
         <hr></hr>
           <p style="text-align: center"><em>**The following text does not have to be said verbatim but all checkboxes must be covered for QA**</em></p>
-        <hr></hr>
-        <br>
         </form>     
       </div>
     </div>
   </div>
     <!-- SEND OFF ACCORDION -->
-    <div class="accordion-item">
+  <div class="accordion-item">
       <h2 class="accordion-header" id="headingOne">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
           Send Off
           <p style="text-align: center"><em>** Remember to review any purchased Optional Benefit added to MAPD Plan**</em></p> <br>
-          
         </button>
       </h2>
       <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          <h2 class="border" style="color: white">  </h2> 
-
-          
-          <hr></hr>
-            <p style="text-align: center"><em>**The following text does not have to be said verbatim but all checkboxes must be covered for QA**</em></p>
-          <hr></hr>
-          <br>
-          
-          <p>' Now just to confirm, your email address is [<em>client email</em>] and your phone number is [<em>client # </em>]?' </p> 
-          
-          <ul
+            <h2 class="border" style="color: white">  </h2> 
+              <p style="text-align: center"><em>**The following text does not have to be said verbatim but all checkboxes must be covered for QA**</em></p>
+            <br>
+            <p>' Now just to confirm, your email address is [<em>client email</em>] and your phone number is [<em>client # </em>]?' </p>        
             <input type="checkbox" name="sales-list"> Client's email address confirmed (or capture email address) **<em>This does not count against you if the client refuses</em>**  
-          </ul>
-          
-          <p>' Thank you for the opportunity to be your agent - and remember that I’m [<em>Agent Name</em>] with SelectQuote.  You should probably write that down because we’ll be your contact if you have any questions or concerns about your plan.  In fact, here’s the number for our SelectQuote Customer Care Team: <b>855-359-3489</b>. They will call you in the next couple of days and reach out to you throughout the year to answer any questions that you might have. As I mentioned, SelectQuote is your one-stop-shop for all of your insurance needs so we can save you time and money with one call. </p> 
-          
-          <p> The next step will be to get you to a SelectQuote licensed enrollment specialist who will fill out your application and send it to the carrier, this process takes about 20 minutes. During the enrollment you will have to repeat some of the information that you have already provided me with, this is to ensure that our records are accurate. At one point the enrollment specialist will ask you to call them back on an inbound call so you will want to have a pen ready to write down their phone number.</p> 
-          
-          <p> It's also important that you know you will be required to select a payment option even if your plan costs $0, this is standard on all plans. '</p>
-          
-          <ul>
-            
-            <input type="checkbox" name="sales-list"> Agent legal name (first and last) and phone #.
-            <input type="checkbox" name="sales-list"> Customer Care Team introduction.
-            <input type="checkbox" name="sales-list"> Client Services phone #: 1-855-359-3489
-            
-          </ul>
-          
-          <p>' The biggest compliment you can give me is a referral to family and friends.  SelectQuote will make sure to provide them outstanding service.  We are licensed throughout the US so your referrals don’t have to be limited to just your state.  Please feel free to share the number I gave you with family and friends. '</p>
-          
-          <ul>
-            <input type="checkbox" name="sales-list"> Referral to family and/or friends.  
-          </ul>
-          
-          <p>' Keep in mind we also help our customers with their DVH needs as well as accident policies from Aflac.  Most Medicare recipients love these coverage options and add them to their policies for total protection: I will have a specialist from the SelectQuote [<em>dental/vision/hearing</em>] team contact you once your enrollment is complete. '</p>
-          
-          <ul>
-            <input type="checkbox" name="sales-list"> We also offer our customers dental, hearing, and vision plans  
-          </ul>
+            <p>' Thank you for the opportunity to be your agent - and remember that I’m [<em>Agent Name</em>] with SelectQuote.  You should probably write that down because we’ll be your contact if you have any questions or concerns about your plan.  In fact, here’s the number for our SelectQuote Customer Care Team: <b>855-359-3489</b>. They will call you in the next couple of days and reach out to you throughout the year to answer any questions that you might have. As I mentioned, SelectQuote is your one-stop-shop for all of your insurance needs so we can save you time and money with one call. </p> 
+            <p> The next step will be to get you to a SelectQuote licensed enrollment specialist who will fill out your application and send it to the carrier, this process takes about 20 minutes. During the enrollment you will have to repeat some of the information that you have already provided me with, this is to ensure that our records are accurate. At one point the enrollment specialist will ask you to call them back on an inbound call so you will want to have a pen ready to write down their phone number.</p>           
+            <p> It's also important that you know you will be required to select a payment option even if your plan costs $0, this is standard on all plans. '</p>
+              <input type="checkbox" name="sales-list"> Agent legal name (first and last) and phone #.
+              <input type="checkbox" name="sales-list"> Customer Care Team introduction.
+              <input type="checkbox" name="sales-list"> Client Services phone #: 1-855-359-3489
+            <p>' The biggest compliment you can give me is a referral to family and friends.  SelectQuote will make sure to provide them outstanding service.  We are licensed throughout the US so your referrals don’t have to be limited to just your state.  Please feel free to share the number I gave you with family and friends. '</p>
+              <input type="checkbox" name="sales-list"> Referral to family and/or friends.  
+            <p>' Keep in mind we also help our customers with their DVH needs as well as accident policies from Aflac.  Most Medicare recipients love these coverage options and add them to their policies for total protection: I will have a specialist from the SelectQuote [<em>dental/vision/hearing</em>] team contact you once your enrollment is complete. '</p>
+              <input type="checkbox" name="sales-list"> We also offer our customers dental, hearing, and vision plans  
+
           
           </form>     
         </div>
       </div>
-    </div>
+  </div>
 <!-- FOOTER -->
   <footer>
-    <div style="margin: 10px 20px 10px 20px;">
-      <p style="text-align: center"><b>*Bolded items in the Benefits section have Out-of-Network copays in PPO and HMO-POS plans. Do not forget to read Out-of-Network benefits when applicable.*</b></p>
-    </div>
-    <button type="reset" class="btn btn-primary">Reset</button>
-    <button  class="btn btn-primary" href="#header">Go to Top</button>        
-      <p style="font-size: 8px;">This page was written up by Chelsea Adams and David Boehm using SelectQuote benefit checklists and QA requirement documents. It is my hope that this will make meeting compliance for new agents easier and less stressful. You can reach us at...</p><br>
-      <p><a href="mailto:chelsea.adams@tiburoninsuranceservices.com "> chelsea.adams@tiburoninsuranceservices.com</a> and <a href="mailto:david.boehm@tiburoninsuranceservices.com "> david.boehm@tiburoninsuranceservices.com</a></p>
-  </footer>
+      <div class="p2" style="margin: 10px 20px 10px 20px;">
+        <button type="reset" class="btn btn-primary">Reset</button>
+        <button  class="btn btn-primary" href="#client">Go to Top</button> 
+      </div>
+       
+  </footer>    
 </main>
-
-
-<!-- JAVASCRIPT -->
-<script>
-  var inputObject = document.getElementsByTagName("button");
-  var isChecked = inputObject.checked;
-  inputObject.addEventListener("click",console.log(isChecked));
-
-
-  
-  // COPY THIS FORM TO CLIPBOARD
-  function copyThisForm(target) {
-    elementID = target.id;
-    var copyText = document.getElementById(elementID);
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
-    /* Copy the text inside the text field */
-    navigator.clipboard.writeText(copyText.value);
-    /* Alert the copied text */
-    // alert("Copied the text: " + copyText.value);
-}
-
-
-
-</script>
+</body>
+<script src="script.js"></script>
+</script> 
 <!-- BOOTSTRAP JS CDN -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
 </html>
