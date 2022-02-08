@@ -3,21 +3,26 @@ body {
     }
     
     .accordion-header { 
-    font-size: 25px;
+    font-size: 20px;
     font-family: tahoma;
     text-align: center;
     margin: 0px;
 
     }
+
+
+
       #countUp{
         font-size: 30px;
 
       }
     .navbar-dark.p{
-      color: aliceblue;
+      color: rgba(240, 248, 255, 0.435);
       
     }
-
+    .badge{
+      margin: 2px
+    }
 
         h1 {
     font-size: 20px;
@@ -42,7 +47,7 @@ body {
     
     p {
     font-family: tahoma;
-    font-size: 1px;
+    font-size: 13px;
     margin: 0px 15px 10px 25px;
     }
     
@@ -63,6 +68,7 @@ body {
     input {
       width: 18px;
       height: 18px;
+      margin: 3px;
     }
     
     a {

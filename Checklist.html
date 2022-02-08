@@ -17,7 +17,7 @@
   <main>
   <!-- NAVBAR -->
   <div class="navbar sticky-top bg-info">
-      <div class="row align-items-start m-2">
+      <div class="row align-items-end m-0">
         <div class="col-sm text-center">
             <h1 id="title">Call Guide 
             <div class="col-sm text-center">
@@ -27,15 +27,18 @@
             </span>        
           </div>
         </div>
+        
       </div>
         <div class="col-sm text-center">
-          <h3>884-665-1140</h3>
+
         </div>
       <!-- CLIENT INFORMATION -->
-      <div id="client">
+      <!-- <div id="client">
         <div class="col-sm align-content-center">
-        <!-- Use Floating Labels here?0 -->
+
         <form name="client" class="input-group mb-1">
+
+
           <span class="input-group-text">First</span>
           <input type="text" class="form-control m-1" id="clientFirstName" name="firstName" aria-describedby="First Name">
           <button onclick="copyThisForm(firstName)" class="btn btn-outline-secondary bi bi-clipboard" type="button" id="button-addon1" ></button>
@@ -57,57 +60,54 @@
           <button onclick="copyThisForm(mbi)" class="btn btn-outline-secondary bi bi-clipboard" type="button" id="button-addon3" ></button>
         </div>
         </form>
-      </div>
+      </div> -->
     </div>
   </div>
-
   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample"></div>
-  <!-- DISCLOSURE ACCORDION -->
+
+
+
+
+  <!-- DISCLOSURE + ATTESTATIONS ACCORDION -->
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        DISCLOSURES:
+        DISCLOSURES: MAG1<span class="badge badge-pill bg-info">Q-Impact: 35%; Q-Target: 90%</span> + MAG2<span class="badge badge-pill bg-info">Q-Impact: 35%; Q-Target: 90%</span>
       </button>
+
+
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <h3>Must be said <strong>verbatim</strong></h3>
         <form id="centertest">
-          <input id="1" type="checkbox" name="sales-list"> "...on a recorded line." </input><span class="badge rounded-pill bg-danger">1 Min</span> <br>
-          <input type="checkbox" name="sales-list"> "Licensed <b>SALES</b> Agent in [<em>insert client state</em>]." </input><span class="badge rounded-pill bg-danger">10 Min</span> <br>
-          <input type="checkbox" name="sales-list"> "Do I have permission to discuss Medicare Advantage plans and Prescription Drug Plans with you?"</input> <br> 
-          <input type="checkbox" name="sales-list"> "You are not required to provide me with any information. There is no obligation to enroll, current or</input> <br> future Medicare enrollment status will not be impacted, and automatic enrollment will not occur."
-      </div>
+          <input id="1" type="checkbox" name="sales-list"> "...on a recorded line." </input><span class="badge rounded-pill bg-danger">1 Min</span><span class="badge rounded-pill bg-danger">Every Call</span> <br>
+          <input type="checkbox" name="sales-list"> "Licensed <b>SALES</b> Agent in [<em>insert client state</em>]." </input><span class="badge rounded-pill bg-danger">10 Min</span><span class="badge rounded-pill bg-danger">Every Call</span> <br>
+          <input type="checkbox" name="sales-list"> TCPA (Utilize in Wrap Up as Best Practice) </input><span class="badge rounded-pill bg-danger">10 Min</span><span class="badge rounded-pill bg-danger">Every Call</span> <hr>
+
+          <input type="checkbox" name="sales-list"> "Do I have permission to discuss Medicare Advantage plans and Prescription Drug Plans with you?"</input> <span class="badge rounded-pill bg-danger">Every Call</span><span class="badge rounded-pill bg-danger">Before MAPD</span> <br> 
+          <input type="checkbox" name="sales-list"> "You are not required to provide me with any information. There is no obligation to enroll, current or</input> <br> future Medicare enrollment status will not be impacted, and automatic enrollment will not occur." <span class="badge rounded-pill bg-danger">Every Call</span> <br>
+          <hr>
+            <input type="checkbox" name="sales-list"> "Have you provided me with the names of all of your current prescriptions, including dosages and frequency?"</input>
+            <span class="badge rounded-pill bg-secondary">No Rx? Use First Option</span>
+
+            <br>
+            <input type="checkbox" name="sales-list"> "The pharmacy [<em>name of pharmacy</em>] located on [<em>pharmacy address</em>] will be selected as your pharmacy of choice, correct?"</input> <span class="badge rounded-pill bg-secondary">Exclude Store #</span> <br>
+            <input type="checkbox" name="sales-list"> "Have you provided me with the names of your primary care physician and any specialists you currently see?"</input> 
     </div>
   </div>
-  <!-- ATTESTATIONS ACCORDION -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-        ATTESTATIONS
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-    
-        <form id="centertest">
-            
-            <input type="checkbox" name="sales-list"> "Have you provided me with the names of all of your current prescriptions, including dosages and frequency?"</input> <br>
-            <input type="checkbox" name="sales-list"> "The pharmacy [<em>name of pharmacy</em>] located on [<em>pharmacy address</em>] will be selected as your pharmacy of choice, correct?"</input> <br>
-            <input type="checkbox" name="sales-list"> "Have you provided me with the names of your primary care physician and any specialists you currently see?"</input>
-                    
-      </div>
-    </div>
   </div>
+
+
+
   <!-- BENEFITS ACCORDION -->
-  <!-- Pill Badges Here -->
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
         BENEFITS:
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <form id="centertest">
             <input type="checkbox" name="sales-list"> Total Plan Premium: $ ____ in addition to your Part B premium.</input> <br>
@@ -124,6 +124,9 @@
       </div>
     </div>
   </div>
+
+
+
   <!-- PART D ACCORDION -->
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingFour">
@@ -131,7 +134,7 @@
         PART D - IF ENROLLING IN A MAPD OR PDP
       </button>
     </h2>
-    <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <form id="centertest">
             
@@ -151,13 +154,16 @@
       </div>
     </div>
   </div>
+
+
+
   <!-- WRAP UP -->
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
         Wrap Up/Send Off
-        <p style="text-align: center"><em>** Remember to review any purchased Optional Benefit added to MAPD Plan**</em></p> <br>
+        <p style="text-align: center">** Remember to review any purchased Optional Benefit added to MAPD Plan**</p> <br>
         
       </button>
     </h2>
@@ -166,52 +172,68 @@
         <h2 class="border" style="color: white">  </h2> 
           <input class="sublist" type="checkbox" name="sales-list"> <u>TCPA</u> (<em>if applicable</em>): "Whenever I collect a phone number, I have to play a recording for compliance purposes; at the end please say yes or no." </input><br>
           <input class="sublist" type="checkbox" name="sales-list"><b> <u>For MAPD Plans:</u></b> "This is a Medicare Advantage Plan, not a Medicare Supplement plan. With this Medicare Advantage plan you will receive your Medicare health benefits through [<em>insert Carrier name</em>] instead of Original Medicare. The name of your plan is the [<em>insert <b>COMPLETE</b> plan name</em>], and it is an [<em>insert <b>HMO, PPO, PFFS, HMO-POS - SNP, DE, </b>ect.</em>]."</input><br>
+          
           <input class="sublist" type="checkbox" name="sales-list"> <u>Only when selling Kaiser plans (suggested verbiage):</u> <br> "Congratulations on your selection of this fabulous Kaiser plan.  With Kaiser you will be able to use their outstanding, Top-Rated network of Primary Care Physicians, specialists and pharmacies. <b>After your enrollment,  you will select your new Primary Care Physician with Kaiser Permanente. As a reminder, all doctors and pharmacies outside of the Kaiser network will not be covered by this plan."</b></input><br>
         <hr></hr>
-          <p style="text-align: center"><em>**The following text does not have to be said verbatim but all checkboxes must be covered for QA**</em></p>
-        </form>     
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col">
+              <h2>WrapUp</h2>
+            </div>
+            <div class="col">
+              <p style="text-align: center"><em>**The following text does not have to be said verbatim but all checkboxes must be covered for QA**</em></p>
+            </div>
+          </div>
+        </div>
+
+       
+          
+        </form>   
+        <h2 class="border" style="color: white">  </h2>     
+        <br>       
+        <input type="checkbox" name="sales-list"> Client's email: confirmed/obtained <span class="badge badge-pill bg-warning">30% Q-Target</span> <br>
+          <input type="checkbox" name="sales-list"> Agent legal name + phone #. <br>
+          <input type="checkbox" name="sales-list"> CCA Introduction + <b>1-855-359-3489</b> <br>
+          <input type="checkbox" name="sales-list"> Referral to family and/or friends.  <br>
+          <input type="checkbox" name="sales-list"> We also offer our customers dental, hearing, and vision plans.  <br>
+          <input type="checkbox" name="sales-list"> Same Household Capture (Name + DoB) <span class="badge badge-pill bg-warning">10% Q-Target</span> <span class="badge badge-pill bg-warning">New Accounts</span>      
+      </form>    
       </div>
     </div>
   </div>
+
+
+
     <!-- SEND OFF ACCORDION -->
-  <div class="accordion-item">
+    <div class="accordion-item">
       <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-          Send Off
-          <p style="text-align: center"><em>** Remember to review any purchased Optional Benefit added to MAPD Plan**</em></p> <br>
+        
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+         Metrics 
+         
         </button>
       </h2>
-      <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div id="collapseSeven" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#collapseSeven">
         <div class="accordion-body">
-            <h2 class="border" style="color: white">  </h2> 
-              <p style="text-align: center"><em>**The following text does not have to be said verbatim but all checkboxes must be covered for QA**</em></p>
-            <br>
-            <p>' Now just to confirm, your email address is [<em>client email</em>] and your phone number is [<em>client # </em>]?' </p>        
-            <input type="checkbox" name="sales-list"> Client's email address confirmed (or capture email address) **<em>This does not count against you if the client refuses</em>**  
-            <p>' Thank you for the opportunity to be your agent - and remember that I’m [<em>Agent Name</em>] with SelectQuote.  You should probably write that down because we’ll be your contact if you have any questions or concerns about your plan.  In fact, here’s the number for our SelectQuote Customer Care Team: <b>855-359-3489</b>. They will call you in the next couple of days and reach out to you throughout the year to answer any questions that you might have. As I mentioned, SelectQuote is your one-stop-shop for all of your insurance needs so we can save you time and money with one call. </p> 
-            <p> The next step will be to get you to a SelectQuote licensed enrollment specialist who will fill out your application and send it to the carrier, this process takes about 20 minutes. During the enrollment you will have to repeat some of the information that you have already provided me with, this is to ensure that our records are accurate. At one point the enrollment specialist will ask you to call them back on an inbound call so you will want to have a pen ready to write down their phone number.</p>           
-            <p> It's also important that you know you will be required to select a payment option even if your plan costs $0, this is standard on all plans. '</p>
-              <input type="checkbox" name="sales-list"> Agent legal name (first and last) and phone #.
-              <input type="checkbox" name="sales-list"> Customer Care Team introduction.
-              <input type="checkbox" name="sales-list"> Client Services phone #: 1-855-359-3489
-            <p>' The biggest compliment you can give me is a referral to family and friends.  SelectQuote will make sure to provide them outstanding service.  We are licensed throughout the US so your referrals don’t have to be limited to just your state.  Please feel free to share the number I gave you with family and friends. '</p>
-              <input type="checkbox" name="sales-list"> Referral to family and/or friends.  
-            <p>' Keep in mind we also help our customers with their DVH needs as well as accident policies from Aflac.  Most Medicare recipients love these coverage options and add them to their policies for total protection: I will have a specialist from the SelectQuote [<em>dental/vision/hearing</em>] team contact you once your enrollment is complete. '</p>
-              <input type="checkbox" name="sales-list"> We also offer our customers dental, hearing, and vision plans  
+          <h2>Same Day Close </h2>
+          <input type="checkbox" name="sales-list"> MA/MS Policy Sold on the Account <em>; OR</em> <br>
+          <input type="checkbox" name="sales-list"> TCPA + Product Pitch <em>; OR</em> <br>
+          <input type="checkbox" name="sales-list"> TCPA + Ancillary Transfer <em>; OR</em> <br>
 
-          
-          </form>     
         </div>
       </div>
-  </div>
+    </div>
+
+
+    
 <!-- FOOTER -->
-  <footer>
+  <!-- <footer>
       <div class="p2" style="margin: 10px 20px 10px 20px;">
         <button type="reset" class="btn btn-primary">Reset</button>
         <button  class="btn btn-primary" href="#client">Go to Top</button> 
       </div>
        
-  </footer>    
+  </footer>     -->
 </main>
 </body>
 <script src="script.js"></script>

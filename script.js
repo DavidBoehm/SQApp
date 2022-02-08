@@ -40,3 +40,7 @@ function pad(val)
         return valString;
     }
 }
+
+$(function () {
+    $('[data-toggle="popover"]').popover()
+  })
